@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/VANITAS.iml" filepath="$PROJECT_DIR$/.idea/VANITAS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/build-logic.iml" filepath="$PROJECT_DIR$/build-logic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/build-logic.main.iml" filepath="$PROJECT_DIR$/.idea/modules/build-logic.main.iml" />
     </modules>
   </component>
 </project>
