@@ -1,11 +1,11 @@
-package com.example.demo
+package com.nhn.inje.ccp
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class DemoApplication
+class Main
 
 fun main(args: Array<String>) {
-	runApplication<DemoApplication>(*args)
+    runApplication<Main>(*args)
 }
