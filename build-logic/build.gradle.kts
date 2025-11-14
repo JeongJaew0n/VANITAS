@@ -1,6 +1,6 @@
 plugins {
-    `kotlin-dsl` // precompiled script plugin 를 사용할 수 있게 해줌.
-    `java-library` // api, implementation 와 같은 의존성 구성을 사용할 수 있게 해줌. api: 외부 노출, implementation: 내부 사용. 현재 script에서는 api가 없으니 지워도 무방.
+    `kotlin-dsl` // Kotlin DSL로 컨벤션 플러그인을 작성
+    `java-library` // 플러그인 코드에 필요한 Java/Kotlin API 제공
 }
 
 object Versions {
@@ -10,20 +10,11 @@ object Versions {
     const val KTLINT = "13.0.0"
 }
 
-// plugins
 dependencies {
-    // Kotlin Gradle
-    implementation("org.jetbrains.kotlin.jvm:org.jetbrains.kotlin.jvm.gradle.plugin:${Versions.KOTLIN}")
-    implementation("org.jetbrains.kotlin.plugin.spring:org.jetbrains.kotlin.plugin.spring.gradle.plugin:${Versions.KOTLIN}")
-    implementation("org.jetbrains.kotlin.plugin.jpa:org.jetbrains.kotlin.plugin.jpa.gradle.plugin:${Versions.KOTLIN}")
-    implementation("org.jetbrains.kotlin.plugin.allopen:org.jetbrains.kotlin.plugin.allopen.gradle.plugin:${Versions.KOTLIN}")
-
-    // Spring Boot
-    implementation("org.springframework.boot:spring-boot-gradle-plugin:${Versions.SPRING_BOOT}")
-
-    // Dependency Management
-    implementation("io.spring.gradle:dependency-management-plugin:${Versions.DEPENDENCY_MANAGEMENT}")
-
-    // ktlint
-    implementation("org.jlleitschuh.gradle:ktlint-gradle:${Versions.KTLINT}")
+    implementation("org.jetbrains.kotlin.jvm:org.jetbrains.kotlin.jvm.gradle.plugin:${Versions.KOTLIN}") // kotlin("jvm")
+    implementation("org.jetbrains.kotlin.plugin.spring:org.jetbrains.kotlin.plugin.spring.gradle.plugin:${Versions.KOTLIN}") // kotlin("plugin.spring")
+    implementation("org.jetbrains.kotlin.plugin.allopen:org.jetbrains.kotlin.plugin.allopen.gradle.plugin:${Versions.KOTLIN}") // kotlin("plugin.allopen")
+    implementation("org.springframework.boot:spring-boot-gradle-plugin:${Versions.SPRING_BOOT}") // org.springframework.boot 플러그인 의존성
+    implementation("io.spring.gradle:dependency-management-plugin:${Versions.DEPENDENCY_MANAGEMENT}") // io.spring.dependency-management 플러그인 의존성
+    implementation("org.jlleitschuh.gradle:ktlint-gradle:${Versions.KTLINT}") // ktlint 플러그인 의존성
 }
