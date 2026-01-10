@@ -1,10 +1,9 @@
-// [Multi Moudle] 4. 모든 모듈이 공통으로 따를 Kotlin/JVM + ktlint 컨벤션을 정의한다.
+// [Multi Moudle] 4. 모든 모듈이 공통으로 따를 Kotlin/JVM 컨벤션을 정의한다.
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
     kotlin("jvm")
-    id("org.jlleitschuh.gradle.ktlint")
 }
 
 repositories {

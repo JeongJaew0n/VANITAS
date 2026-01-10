@@ -3,7 +3,8 @@ group = "com.nhn.inje.ccp"
 version = "0.0.1-SNAPSHOT"
 
 subprojects {
-    apply(plugin = "common") // Kotlin/JVM 및 ktlint 공통 컨벤션 적용
+    apply(plugin = "jvm") // Kotlin/JVM 공통 컨벤션 적용
+    apply(plugin = "ktlint") // ktlint 공통 컨벤션 적용
 
     group = rootProject.group
     version = rootProject.version

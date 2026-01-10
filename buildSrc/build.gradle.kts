@@ -9,9 +9,7 @@ repositories {
 }
 
 dependencies {
-    implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.0.21")
-    implementation("org.jetbrains.kotlin:kotlin-allopen:2.0.21")
-    implementation("org.springframework.boot:spring-boot-gradle-plugin:3.5.4")
-    implementation("io.spring.gradle:dependency-management-plugin:1.1.6")
-    implementation("org.jlleitschuh.gradle:ktlint-gradle:12.1.1")
+    implementation(libs.kotlin.gradle.plugin)
+    implementation(libs.kotlin.allopen)
+    implementation(libs.ktlint.gradle)
 }
