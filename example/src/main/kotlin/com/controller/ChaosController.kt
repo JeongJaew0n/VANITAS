@@ -1,4 +1,4 @@
-package com.nhn.inje.ccp.controller
+package com.controller
 
 import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity

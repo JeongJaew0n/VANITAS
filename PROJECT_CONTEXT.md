@@ -44,7 +44,7 @@ VANITAS/
 
 ### example 모듈
 - **타입**: Spring Boot 웹 애플리케이션
-- **패키지**: com.nhn.inje.ccp
+- **패키지**: com
 - **메인 클래스**: Main.kt
 - **의존성**:
   - spring-boot-starter-web
@@ -100,7 +100,7 @@ VANITAS/
 - 클래스: UpperCamelCase
 - 메서드/필드: lowerCamelCase
 - 상수: SCREAMING_SNAKE_CASE
-- 패키지: 경로 구조와 일치 (com.nhn.inje.ccp.<feature>)
+- 패키지: 경로 구조와 일치 (com.<feature>)
 
 ### 스타일
 - 들여쓰기: 4 스페이스

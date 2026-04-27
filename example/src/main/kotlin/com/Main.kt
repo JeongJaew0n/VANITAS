@@ -1,4 +1,4 @@
-package com.nhn.inje.ccp
+package com
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
