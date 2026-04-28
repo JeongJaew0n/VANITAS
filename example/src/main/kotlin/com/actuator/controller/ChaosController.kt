@@ -1,4 +1,4 @@
-package com.controller
+package com.actuator.controller
 
 import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity
