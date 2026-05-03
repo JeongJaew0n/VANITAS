@@ -17,3 +17,6 @@ dependencyResolutionManagement {
 
 include("example") // 기본 Spring Boot 서비스 모듈
 include("shop") // shop 서브 도메인 (헥사고날 학습용 별도 모듈)
+
+include("common-security")
+project(":common-security").projectDir = file("core/common-security")
